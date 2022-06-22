@@ -1,13 +1,25 @@
 * {
     margin: 0;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
 }
 
 body {
     background-color: #35363a;
-    color: white;
-    font-family: Roboto,'Segoe UI',Tahoma,sans-serif;
+    /* font-size: 0.8125em; */
 }
 
-p {
-    font-size: 81.25%;
+.caja_blanca {
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+main {
+    margin: 100px;
+    background-color: #5a5a5a;
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;  
 }
