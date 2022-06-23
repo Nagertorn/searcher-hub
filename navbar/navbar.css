@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    text-align: center;
+}
+
+.navbar_container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    background-color: rgb(240, 120, 120);
+}
+
+.navbar_child {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar_child:hover {
+    background-color: rgb(180, 30, 30);
+}
+
+/* Medium screens */
+@media screen and (max-width: 800px) {
+    .navbar_container {
+        /* When on medium sized screens, we center it by evenly distributing empty space around items */
+        justify-content: space-around;
+    }
+
+    .navbar_child {
+        flex: 1;
+    }
+}
+
+/* Small screens */
+@media screen and (max-width: 500px) {
+    .navbar_container {
+        /* On small screens, we are no longer using row direction but column */
+        flex-direction: column;
+    }
+}
